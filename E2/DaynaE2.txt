@@ -1,19 +1,19 @@
 1. cd Desktop
 2. mkdir MDIA2526Backup
-3. cd Ex2 !!! may have to change this to Exercise\ 2/Ex2 depending on how the file structure works out !!!
+3. cd Ex2 
 4. cat error.txt
-5. !!! however many lines of text are in error.txt !!!
+5. 352 lines
 6 & 7. head -20 error.txt >> commands.txt
 8 & 9. tail -10 error.txt >> commands.txt
 10. !!! not really a proper command for this on the command line if they want you to use nano !!! nano error.txt
 11 & 12. head -2 error.txt >> commands.txt
-13. !!! cd ../../MDIA2526Backup if we had to go into Exercise\ 2/Ex2, ../MDIA2526Backup if we just had to go into Ex2 !!!
+13. ../MDIA2526Backup 
 14. mkdir {txt,svgs,pngs,arrows,startsWithG,all}
-15. !!! assuming that it is in the Exercise\ 2/Ex2 directory !!! cp ./Exercise\ 2/Ex2/imgs/*.svg ./svgs 
-16. !!! same assumptions as 15 !!! cp ./Exercise\ 2/Ex2/imgs/*.png ./pngs
-17. !!! same assumptions as 15 !!! cp ./Exercise\ 2/Ex2/imgs/*arrow* ./arrows
-18. !!! same assumptions as 15 !!! cp ./Exercise\ 2/Ex2/imgs/^G* ./startsWithG
-19. !!! same assumptions as 15 !!! cp -r ./Exercise\ 2/Ex2 ./all
+15. cp ./Ex2/imgs/*.svg ./svgs 
+16. cp ./Ex2/imgs/*.png ./pngs
+17. cp ./Ex2/imgs/*arrow* ./arrows
+18. cp ./Ex2/imgs/^G* ./startsWithG
+19. cp -r ./Ex2 ./all
 20. mv ./all/Ex2 ./all/Original
 21. mv ./all/Original/error.txt ./txt
 22 & 24. find . -name *.svg >> commands.txt

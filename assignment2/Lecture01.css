@@ -1,0 +1,35 @@
+#navBar {
+  width: 100%;
+  background-color: #333333;
+  padding: none;
+  margin: none;
+}
+
+#navList {
+  list-style-type: none;
+  overflow: hidden;
+  padding: none;
+  margin: none;
+}
+
+.navItem {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+
+li a:hover {
+  background-color: #ffffff;
+  color:#000000;
+}
+
+h1 {
+  font-family: Monaco, Courier;
+}

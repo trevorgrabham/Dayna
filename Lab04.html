@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 04</title>
+    </head>
+    <body>
+        <header>
+            <h1>Learning Forms</h1>
+        </header>
+        <form method="post" action="process.php" autocomplete="on">
+          <fieldset>
+              <legend><h5>Personal Info</h5></legend>
+              <p>
+                <label>What is your first name?</label>
+                <input type="search" placeholder="First Name" .../>
+              </p>
+              <p>
+                <label>Date you joined BCIT</label>
+                <br>
+                <input type="search" placeholder="2020-08-22" .../>
+                <!--The entry box should be dropped under "Date you joined BCIT-->
+                <div>
+                  <!-- this div has no matching end                                                                       *** Trev ***  -->
+                <label>Select your favorite colour: <br/>
+                <input type="color" name="red" value="#ff0000" />
+                <!-- changed the name and set the default value to red using the value field                              *** Trev *** -->
+               </p>
+          </fieldset>
+          <h3>Is COMP 1170 enjoyable?</h3>
+          <input type="radio" id="yes" name="enjoyable" checked><label for="yes">Yes</label>
+          <input type="radio" id="sometimes" name="enjoyable"><label for="sometimes">Sometimes</label>
+          <input type="radio" id="not-really" name="enjoyable"><label for="not-really">Not really</label>
+          <!-- gave id's to the inputs and used labels with the for field set to the same as the id for the input. This allows us to click on the
+                text for the label and have the box get ticked. Also gave all of the inputs the same name so that only one can be checked at a time     *** Trev *** -->
+          <br>
+          <hr>
+          <h3>Why are you taking COMP1170?</h3>
+          <input type="checkbox" id="fun"><label for="fun">For fun</label>
+          <input type="checkbox" id="required"><label for="required">Because it is required</label>
+          <input type="checkbox" id="credit"><label for="credit">To earn course credit</label>
+          <input type="checkbox" id="job"><label for="job">For being job ready</label>
+          <!-- same thing with the labels and id's so that we can click on the text                                         *** Trev ** -->
+          <hr>
+          <h3><label for="choices">What is your favourite topic so far?</label></h3>
+          <br>
+          <select name="choices" id="choices" size="4">
+            <!-- didn't have a matching closing tag                                                                           *** Trev *** -->
+              <option>Lab 01</option>
+              <option>Lab 02</option>
+              <option>Lab 03</option>
+              <option>Lab 04</option>
+              <option selected="selected">Other</option>
+              <!--set the selected attribute to selected for the default option                                           *** Trev *** -->
+          </select>
+          <!-- put in the missing closing tag here                                                                        *** Trev *** -->
+          <br>
+          <hr>
+          <h3><label for="like-best">What do you like best about COMP1170?</label></h3>
+          <!--Line above is not showing up-->
+        <!--  <form action="/action_page.php"> -->
+            <!-- don't need this new form here, we should only have a single form, if we need two it should be a seperate page  *** Trev *** -->
+          <textarea name="like-best" id="like-best" rows="4" cols="50" placeholder="Describe yourself here..."></textarea>
+          <hr>
+          <br>
+          <input type= "submit" value="Send">
+          <!-- set the value to send so that the text matched the picture                                                     *** Trev *** -->
+          <!-- was missing the closing > for the input tag                                                                    *** Trev *** -->
+          <br><br>
+          <input type="reset" name="reset" value="Reset">
+          <br>
+          <!--why are the buttons not breaking?-->
+          <!--when this button gets clicked, email has to be sent -->
+          <input type="button">
+          <!-- was missing the closing > for the input tag                                                                    *** Trev *** -->
+          onclick="window.open('mailto:your@email.ca')" value="send"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+h1 {
+  color: #ff00ff;   /* a */
+}
+
+h2 {
+  color: #00ffff;   /* a */
+}
+
+#div2 {
+  background-color: #777777;   /* b */
+  border: dotted 2px;   /* b */
+  width: 33%;   /* b */
+  padding: 25px;   /* b */
+}
+
+figure{
+  box-sizing: border-box;   /* c */
+  width: 600px;   /* c */
+  height: 200px;   /* c */
+  margin: 20px;   /* c */
+  padding: 20px;   /* c */
+}
+
+#p1 {
+  border: solid red 3px;   /* d */
+}
+
+.divClass {
+  padding: 20px 30px 10px 30px;   /* e */
+}
+
+a:link {
+  color: #0f0f0f;   /* f */
+}
+
+a:visited {
+  color: #f0f0f0;   /* f */
+}
+
+a:active {
+  color: #00ff00;   /* f */
+}
+
+a:hover{
+  color: #0000ff;   /* f */
+}
+
+[class ^= "he"] {
+  height: 20px;   /* g */
+  overflow: auto;   /* g */
+}
+
+p::first-letter {
+  color: brown;   /* h */
+}
+
+ul {
+  list-style: upper-roman outside;   /* i */
+}
+
+img, p {
+  margin-top: 10px;   /* j */
+  margin-bottom: 10px;   /* j */
+}
+
+img {
+  padding: 20px;   /* k */
+  border: dashed black 3px;   /* k */
+}
+
+footer a:hover {
+  color: #ffffff;   /* l */
+}
+
+figcaption {
+  background-color: #34e5eb;   /* m */
+}
+
+figcaption:hover{
+  color: white;   /* m */
+}
+
+header, footer {
+  background-color: #4f39e3;   /* n */
+}
+
+h1 {
+  font-family: 'Tangerine';   /* o    tangerine font style was added in the html file in the head*/
+  border: dashed black 2px;   /* o */
+}
+
+main {
+  background-image: linear-gradient(rgba(240, 74, 74, 1), rgba(255,123,0,1), rgba(242,255,0,1));   /* p */
+}
