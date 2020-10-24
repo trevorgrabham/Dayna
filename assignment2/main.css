@@ -92,3 +92,7 @@ h1 {
 main {
   background-image: linear-gradient(rgba(240, 74, 74, 1), rgba(255,123,0,1), rgba(242,255,0,1));   /* p */
 }
+
+h1 {
+  text-shadow: 2px 2px 4px black;   /* q */
+}
