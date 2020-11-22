@@ -1,0 +1,52 @@
+body,html {
+  height: 99%;    /* need this so that the flex-container takes up the full height of the page */
+}
+
+.flex-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header, div {
+  flex: 1 2 auto;
+  display: flex;        /* need this to centre the text */
+}
+
+p {
+  margin: auto;   /* automatically takes up the entire available space to centre the text */
+}
+
+.bottom-div {
+  display: flex;
+  flex-direction: column;
+  flex: 4 8 auto; /* may have to fix the shrink */
+}
+
+.content {
+  flex: 2 1 auto;
+}
+
+header {
+  background-color: #4285eb;
+}
+
+.content {
+  background-color: #c7ced9;
+}
+
+.sign-up {
+  background-color: #99c2ff;
+}
+
+.feature-1 {
+  background-color: #ff9245;
+}
+
+.feature-2 {
+  background-color: #ff4545;
+}
+
+.feature-3 {
+  background-color: #b187ff;
+}
