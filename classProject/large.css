@@ -17,7 +17,10 @@ html, body {
   needs to be display flex so that the nav bar itself is responsive */
 header {
   display: flex;
-  flex: 1 9 10%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
 }
 
 /* set up the icon on the top left, don't want it to resize so we set it to 0 0, and let the nav bar resize around it instead
@@ -25,7 +28,6 @@ header {
 .header-info {
   display: flex;
   flex: 0 0 auto;
-  border: 2px solid black;
   padding: 0px;
 }
 
@@ -37,18 +39,19 @@ header {
 }
 
 /* border radius sets it as a circular image
-  margin right allows for some spacing away from the text
   width and height set the size of the image */
 #header-img {
   width: 85px;
   height: 85px;
   border-radius: 50%;
-  margin-right: 5px;
 }
 
-/* vertically centres the text */
+/* vertically centres the text
+  padding gives it some space from the nav bar and the image */
 header h3 {
   margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* sets up the nested display flex and flex settings so that the nav bars are responsive, also so we can centre the text */
@@ -74,6 +77,11 @@ nav a {
   border-left: none;
 }
 
+/* want the left border only on the first list item */
+nav li:first-child {
+  border-left: 2px solid black;
+}
+
 /* centres the text for the nav links */
 nav p {
   margin: auto;
@@ -96,4 +104,42 @@ nav p {
 .hero-content h1 {
   margin: auto;
   font-size: 6em;
+}
+
+/* sets the content window to the entire screen size, minus the nav bar at the top */
+.content {
+  width: 100%;
+  height: 90%;
+}
+
+/* sets up the parent container */
+#about-me {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* the margin gets the text away from the left side of the page */
+#name {
+  margin-left: 2%;
+}
+
+/* sets it so that the content is responsive */
+.about-me-content {
+  flex: 1 1 auto;
+  margin-left: 2%;
+}
+
+/* the image doesn't ever take up more than 20% of the width of the page, can change it to bigger or smaller depending on how you feel */
+.about-me-img {
+  flex: 0 0 20%;
+  padding: 10%;
+  padding-top: 0px;
+}
+
+/* setting the width to 100% and then not setting height, but the max height allows it to automatically set the height so that the image doesn't get weirdly distorted */
+.about-me-img img {
+  width: 100%;
+  max-height: 100%;
+  border: 5px solid black;
 }
