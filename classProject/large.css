@@ -1,9 +1,11 @@
+/* so we can use %s for width and height of the header stuff */
 html, body {
   width: 100%;
   height: 100%;
   margin: 0px;
 }
 
+/* flex column so that the nav bar and the image are responsive and stack ontop of eachother */
 .hero-page {
   display: flex;
   flex-direction: column;
@@ -11,23 +13,32 @@ html, body {
   height: 100%;
 }
 
+/* want the nav bar and icon to take up roughly 10% of the page, and stay that way, so it shrinks 9x as fast as the hero image
+  needs to be display flex so that the nav bar itself is responsive */
 header {
   display: flex;
   flex: 1 9 10%;
 }
 
+/* set up the icon on the top left, don't want it to resize so we set it to 0 0, and let the nav bar resize around it instead
+  have it as display flex so that the icon and name line up nice and neat beside eachother */
 .header-info {
   display: flex;
   flex: 0 0 auto;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 0px;
 }
 
+/* display flex so that we can properly centre the text vertically */
 .header-info a {
   display: flex;
   flex: 0 0 auto;
+  text-decoration: none;
 }
 
+/* border radius sets it as a circular image
+  margin right allows for some spacing away from the text
+  width and height set the size of the image */
 #header-img {
   width: 85px;
   height: 85px;
@@ -35,48 +46,54 @@ header {
   margin-right: 5px;
 }
 
+/* vertically centres the text */
 header h3 {
-  border: 1px solid black;
-  display: flex;
-}
-
-.name {
   margin: auto;
 }
 
+/* sets up the nested display flex and flex settings so that the nav bars are responsive, also so we can centre the text */
 nav, nav ul, nav li{
   display: flex;
   flex: 1 1 auto;
   margin: 0px;
 }
 
+/* list style type removes the bullets and padding removes the normal left indentation from the list */
 nav ul {
   list-style-type: none;
   padding: 0px;
 }
 
+/* text decoration removes the underline from the links
+  set up with borders, but may consider removing them if background colour is properly done it may become redundant */
 nav a {
   display: flex;
   flex: 1 1 auto;
   text-decoration: none;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-left: none;
 }
 
+/* centres the text for the nav links */
 nav p {
   margin: auto;
-  border: 1px solid red;
 }
 
+/* sets up the hero image to ideally take up 90% of the page
+  background image sets the picture
+  it will repeat the image and tile the background by default, no-repeat fixes this
+  background size to cover automatically resizes the image to take up the entire container */
 .hero-content {
   display: flex;
   flex: 9 1 90%;
-  border:  1px solid black;
   background-image: url("hero-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+/* centres the hero text */
 .hero-content h1 {
   margin: auto;
+  font-size: 6em;
 }
