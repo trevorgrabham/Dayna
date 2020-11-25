@@ -1,0 +1,82 @@
+/* so we can use %s for width and height of the header stuff */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header-img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.header-info a{
+    display: flex;
+    flex-direction: column;
+}
+
+#header-img {
+  margin: auto;
+}
+
+.header-info h3{
+  margin: auto;
+}
+
+nav ul {
+  margin: 0px;
+}
+
+header {
+  flex: 0 0 auto;
+  width: 100px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav a {
+  height: 100%;
+  display: flex;
+}
+
+nav li {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav p {
+  margin: auto;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+header a {
+  color: white;
+}
+
+nav a:hover{
+  background-color: white;
+  color: black;
+}
+
+body {
+  display: flex;
+}
+
+.content {
+  flex: 1 1 auto;
+  left: 100px;
+}
