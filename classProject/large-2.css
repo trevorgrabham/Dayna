@@ -78,5 +78,23 @@ body {
 
 .content {
   flex: 1 1 auto;
-  left: 100px;
+  margin-left: 100px;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("hero-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-page h1 {
+  margin: auto;
+  font-size: 5em;
 }
