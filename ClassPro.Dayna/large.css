@@ -166,7 +166,7 @@
 
 .textone {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -206,7 +206,7 @@
 
 .texttwo {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -318,7 +318,7 @@
   }
 
   input[type="submit"] {
-    width: 15%;
+    width: 6%;
     padding: 1%;
     font-size: 1em;
   }
