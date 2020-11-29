@@ -1,0 +1,357 @@
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  }
+  /* so I can use %s for width and height of the header stuff */
+  body {
+    background-image: url('dust_scratches.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .header-info {
+    margin-top: 2%;
+  }
+
+  #header-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-info a{
+      display: flex;
+      flex-direction: column;
+  }
+
+  #header-img {
+    margin: auto;
+  }
+
+  .header-info h3{
+    margin: auto;
+  }
+
+  nav ul {
+    margin: 0px;
+  }
+
+  header {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  nav a {
+    height: 100%;
+    display: flex;
+  }
+
+  nav li {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav p {
+    margin: auto;
+  }
+
+  nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+  }
+
+  header a {
+    color: white;
+  }
+
+  nav a:hover{
+    background-color: white;
+    color: black;
+  }
+
+  body {
+    display: flex;
+  }
+
+  .content {
+    flex: 1 1 auto;
+    margin-left: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("NUD.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-page h1 {
+    margin: auto;
+    font-size: 5em;
+  }
+
+  #about-me {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .about-me-content {
+    flex: 1 1 auto;
+    margin-left: 2%;
+  }
+
+  .about-me-img img {
+    width: 100%;
+    max-height: 100%;
+    border: 5px solid black;
+  }
+
+  .about-me-img {
+    flex: 0 0 20%;
+    padding: 10%;
+    padding-top: 5%;
+  }
+                                         /* portforlio one */
+
+  .containerone {
+  position: relative;
+  width: 50%;
+}
+
+.imageone {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #213f49;
+}
+
+.containerone:hover .overlayone {
+  opacity: 1;
+}
+
+.textone {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+                                         /* portforlio two */
+  .containertwo {
+  position: relative;
+  width: 50%;
+}
+
+.imagetwo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlaytwo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #213f49;
+}
+
+.containertwo:hover .overlaytwo {
+  opacity: 1;
+}
+
+.texttwo {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+  .portfolio-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio-content {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+
+                                           /* Skill bar one*/
+  .skill-container1 {
+    width: 50%;
+    height: 15px;
+    background-color: black;
+  }
+
+  .skill-bar1 {
+    height: 15px;
+    background-color: grey;
+  }
+  .skill-bar2 {
+    height: 15px;
+    background-color: grey;
+  }
+  #skill-11 {
+    width: 32.5%;
+  }
+
+  #skill-12 {
+    width: 25%;
+  }
+
+  #skill-13 {
+    width: 37.5%;
+  }
+                                               /*Skill bar two*/
+  .skill-container2 {
+    width: 50%;
+    height: 15px;
+    background-color: black;
+  }
+
+  .skill-bar1 {
+    height: 15px;
+    background-color: grey;
+  }
+  .skill-bar2 {
+    height: 15px;
+    background-color: grey;
+  }
+  #skill-21 {
+    width: 32.5%;
+  }
+
+  #skill-22 {
+    width: 25%;
+  }
+
+  #skill-23 {
+    width: 0%;
+  }
+                                             /*Skill bar*/
+                                             /* Contact Form*/
+  #contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact h1 {
+    margin-left: 2%;
+  }
+
+  .contact-content {
+    flex: 9 1 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 90%;
+  }
+
+  .contact-content form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    width: 50%;
+    padding: 1%;
+    margin-bottom: 1%
+  }
+
+  textarea {
+    width: 50.1%;
+    height: 12em;
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+
+  input[type="submit"] {
+    width: 6%;
+    padding: 1%;
+    font-size: 1em;
+  }
+                                                     /*contact Form*/
+                                                     /* Social media Icons*/
+  .socials {
+    border-top: 3px solid black;
+    height: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .social-img {
+    display: flex;
+    margin-left: 1%;
+  }
+
+
+  /* test*/
+  .socials li {
+    display:inline-block;
+    list-style-type:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    }
+  .socials li a {
+    border-bottom: none;
+    }
+  .socials li img {
+    width:40px;
+    height:40px;
+    margin-right: 20px;
+  }
+                                                     /* Social media Icons*/
